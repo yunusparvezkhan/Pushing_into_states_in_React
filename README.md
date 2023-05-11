@@ -70,6 +70,22 @@ const pushSong = (songname) => {
 ### For types of arrays other than strings
 We absolutely can use the same method for Arrays of objects, numbers, functons and any other data type. To do that we just have to change the string to that particular data type in the above steps.
 
+## Pushing data in the front of an Array State
+Now let's say we wish to add some data on the beginning of the Array rather than on the tail of the Array. To do this we can follow the previous steps, with a very minor tweak. Such as 
 
+```js
+const [songs, setSongs] = useState(['Tum Prem Ho', 'Hai Katha Sangram Ki', 'Ram Siya Ram' ]);
+
+const pushSong = (songname) => {
+    const updatedState = [
+        songname,
+        ...songs
+    ];
+
+    setSongs(updatedState);
+}
+
+```
+- If you observe the code carefully you would be able to notice the difference of this code from the step 2 of the previous point. The `songname` is mentioned before the `...songs` in the new Array that we are creating namely `updatedState`, where in the previous example it was shown vice versa. This gives us the new Array with the `songname` at first and then the previously existing elements of `songs`.
 
 
