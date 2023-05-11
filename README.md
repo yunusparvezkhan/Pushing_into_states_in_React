@@ -2,7 +2,7 @@
 ## Configuration
 Let's assume that we have a file named Example.js which used functional component and hooks system for React State system. As - 
 
-```
+```js
 import React, { useState } from 'react'
 
 const Example = () => {
