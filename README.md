@@ -67,7 +67,7 @@ const pushSong = (songname) => {
 - This function above creates a completely new array named `updatedState`. That expression `...songs` fetches all the elements of the array `songs` and adds them in this array. Then after the comma we added, the song as `songname` that we wished to add, and which is got in the argument of the function is also pushed on this new manual array. After the creation of this array, we called the setter function of React State system of that specific `songs` state, namely `setSongs` and passed the new array that we have created. This will replace the entire array state with the new array that we have created on the function above. Now the new state is updated with all the existing data in place and also with the new data that we pushed on the tail of that array.
 
 
-### For other types of arrays than strings
+### For types of arrays other than strings
 We absolutely can use the same method for Arrays of objects, numbers, functons and any other data type. To do that we just have to change the string to that particular data type in the above steps.
 
 
