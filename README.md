@@ -48,5 +48,22 @@ const [songs, setSongs] = useState(['Tum Prem Ho', 'Hai Katha Sangram Ki', 'Ram 
 
 So, now that we have updated our state, which was previously an empty array, now we can call it an Array State of some Strings. Or, more preciesly (not neccessary) an Array State of three Strings.
 
+Now, if we wish to add a new song to this Array of songs, we can use the helper function that we have created in the configuration step namely pushSong. Remember the function accepts a String as an argument and that String should be added on the Array of songs. And also notice, that the button we rendered on screen, calls the function when clicked. So now let's add some code to actually make the mechanism that pushes that new piece of song to the Array State.
+
+```js
+const [songs, setSongs] = useState(['Tum Prem Ho', 'Hai Katha Sangram Ki', 'Ram Siya Ram' ]);
+
+const pushSong = (songname) => {
+    const updatedState = [
+        ...songs,
+        songname
+    ];
+
+    setSongs(updatedState);
+}
+
+```
+
+This function above creates a completely new array named updatedState. That expression '...songs' fetches all the elements of the array songs and adds them in this array. Then after the comma we added the songname that we wished to add, and which is got in the argument of the function.
 
 
