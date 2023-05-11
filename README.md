@@ -40,7 +40,7 @@ export default Example
 
 ## Pushing new values into the Array State named 'songs'
 
-You can notice the helper function named pushSong in the configuration file. That function is created to do some dataloading that will eventually give us the state updated with all the existing array elements and also the songname, got from the first arguement of that function, pushed into that array state. So first of all for ease let's add some dummy default data to the array state manually
+You can notice the helper function named `pushSong` in the configuration file. That function is created to do some dataloading that will eventually give us the state updated with all the existing array elements and also the songname, got from the first arguement of that function, pushed into that array state. So first of all for ease let's add some dummy default data to the array state manually
 
 ```js
 const [songs, setSongs] = useState(['Tum Prem Ho', 'Hai Katha Sangram Ki', 'Ram Siya Ram' ]);
